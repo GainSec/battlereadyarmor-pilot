@@ -69,9 +69,12 @@ const proofItems = [
     description:
       "Offensive knowledge should compound, not disappear. The system produces a reusable finding artifact with severity, impacted surface, evidence, and reproduction context.",
     src: "/finding.png",
+    mobileSrc: "/mobile-finding.jpg",
     alt: "BRA finding artifact showing a high-severity unauthenticated admin interface issue with description, impact, and reproduction details.",
     width: 892,
     height: 895,
+    mobileWidth: 1184,
+    mobileHeight: 1829,
   },
 ] as const;
 
@@ -234,12 +237,20 @@ export default function Marketing2() {
 
                 <div className="mt-12 overflow-hidden rounded-[14px] border border-white/10 bg-[#020817]">
                   <Image
+                    src="/mobile-dash.jpg"
+                    alt="BRA command center showing engagement scope and governance"
+                    width={1320}
+                    height={1283}
+                    priority
+                    className="w-full h-auto rounded-xl md:hidden"
+                  />
+                  <Image
                     src="/bra-dash-proper.png"
                     alt="BRA command center showing engagement scope and governance"
                     width={5103}
                     height={1285}
                     priority
-                    className="h-auto w-full object-cover"
+                    className="hidden w-full h-auto rounded-xl md:block"
                   />
                 </div>
               </div>
@@ -247,49 +258,61 @@ export default function Marketing2() {
           </div>
         </section>
 
-        <section className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
-          <div className="mx-auto grid w-full max-w-[1400px] items-start gap-10 lg:grid-cols-[1.08fr_0.72fr]">
+        <section className="border-t border-emerald-400/10 px-6 py-14 lg:px-8">
+          <div className="mx-auto grid max-w-[1400px] items-start gap-20 lg:grid-cols-2">
             <div>
-              <SectionLabel>REAL OFFENSIVE WORK</SectionLabel>
-              <h2 className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.08] tracking-tight text-white lg:text-5xl">
+              <p
+                className="text-xs font-bold uppercase tracking-[0.32em] text-emerald-400"
+                style={{ fontFamily: mono }}
+              >
+                REAL OFFENSIVE WORK
+              </p>
+
+              <h2 className="mt-5 max-w-[650px] text-4xl font-semibold tracking-tight text-white lg:text-6xl">
                 BRA coordinates tools,
                 <br />
                 AI reasoning,
                 <br />
                 and operators.
               </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-                Real offensive workflows execute
-                <br />
-                under mechanical control.
+
+              <p className="mt-6 max-w-[520px] text-lg text-slate-300">
+                Real offensive workflows execute under mechanical control.
               </p>
-              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-400">
+
+              <p className="mt-3 text-sm text-slate-400">
                 Operators approve every action.
               </p>
             </div>
 
-            <div className="w-full max-w-[340px] self-start rounded-xl border border-white/10 bg-white/[0.03] p-4 -mt-4 lg:-mt-8 lg:ml-auto">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-emerald-300" style={{ fontFamily: mono }}>
-                Recent runs
+            <div className="w-full max-w-[420px] justify-self-end">
+              <p
+                className="text-xs font-bold uppercase tracking-[0.32em] text-emerald-400"
+                style={{ fontFamily: mono }}
+              >
+                RECENT RUNS
               </p>
-              <div className="mt-2 grid gap-1.5">
-                {[
-                  "analyzed unfamiliar targets",
-                  "chained recon → enumeration → exploitation",
-                  "reached remote code execution in minutes",
-                  "completed attack paths in tens of actions",
-                ].map((item) => (
-                  <div key={item} className="flex gap-2 text-sm leading-tight text-slate-200">
-                    <span className="mt-1.5 h-2 w-2 rounded-full bg-emerald-400/80" />
-                    <span>{item}</span>
-                  </div>
-                ))}
+
+              <div className="mt-4 rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+                <div className="grid gap-3">
+                  {[
+                    "Tested a previously unknown target.",
+                    "Hotspot password → Recon → Service enumeration → Exploitation.",
+                    "Reached remote code execution in minutes.",
+                    "All in less then 15 actions.",
+                  ].map((item) => (
+                    <div key={item} className="flex gap-3 text-sm leading-relaxed text-slate-300">
+                      <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-emerald-300" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="gap" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
+        <section id="gap" className="border-t border-emerald-400/10 px-6 py-14 lg:px-8">
           <div className="mx-auto w-full max-w-[1400px]">
             <SectionLabel>The Control Gap</SectionLabel>
             <h2 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
@@ -308,7 +331,7 @@ export default function Marketing2() {
           </div>
         </section>
 
-        <section id="pillars" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
+        <section id="pillars" className="border-t border-emerald-400/10 px-6 py-14 lg:px-8">
           <div className="mx-auto w-full max-w-[1400px]">
             <SectionLabel>Core Pillars</SectionLabel>
             <h2 className="mt-5 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
@@ -328,7 +351,7 @@ export default function Marketing2() {
           </div>
         </section>
 
-        <section id="loop" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
+        <section id="loop" className="border-t border-emerald-400/10 px-6 py-14 lg:px-8">
           <div className="mx-auto grid w-full max-w-[1400px] gap-10 lg:grid-cols-[0.95fr_1.05fr]">
             <div>
               <SectionLabel>Multi-Layered Checkpoints</SectionLabel>
@@ -360,7 +383,7 @@ export default function Marketing2() {
           </div>
         </section>
 
-        <section id="knowledge" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
+        <section id="knowledge" className="border-t border-emerald-400/10 px-6 py-14 lg:px-8">
           <div className="mx-auto grid w-full max-w-[1400px] gap-10 lg:grid-cols-[0.92fr_1.08fr]">
             <div>
               <SectionLabel>Knowledge That Compounds</SectionLabel>
@@ -376,12 +399,12 @@ export default function Marketing2() {
                 </p>
                 <div className="mt-4 grid gap-3">
                   {[
-                    "findings turn into reusable artifacts",
-                    "attack paths become institutional knowledge",
-                    "tools and workflows become visible system capabilities",
-                    "expertise survives operator turnover",
-                    "operator decisions persist across engagements",
-                    "security policies and masking rules carry forward automatically",
+                    "Findings turn into reusable artifacts",
+                    "Attack paths become institutional knowledge",
+                    "Tools and workflows become visible system capabilities",
+                    "Expertise survives operator turnover",
+                    "Operator decisions persist across engagements",
+                    "Security policies and masking rules carry forward automatically",
                   ].map((item) => (
                     <div key={item} className="flex gap-3 text-sm leading-snug text-slate-200">
                       <span className="mt-1.5 h-2 w-2 rounded-full bg-emerald-300" />
@@ -396,7 +419,7 @@ export default function Marketing2() {
           </div>
         </section>
 
-        <section id="buyers" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
+        <section id="buyers" className="border-t border-emerald-400/10 px-6 py-14 lg:px-8">
           <div className="mx-auto w-full max-w-[1400px]">
             <SectionLabel>Who Moves First</SectionLabel>
             <div className="mt-8 grid gap-5 lg:grid-cols-3">
@@ -420,7 +443,7 @@ export default function Marketing2() {
           </div>
         </section>
 
-        <section id="cta" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
+        <section id="cta" className="border-t border-emerald-400/10 px-6 py-14 lg:px-8">
           <div className="mx-auto w-full max-w-[1200px] rounded-[32px] border border-emerald-400/14 bg-emerald-400/[0.06] p-8 text-center lg:p-12">
             <SectionLabel>Request Access</SectionLabel>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-white lg:text-5xl">

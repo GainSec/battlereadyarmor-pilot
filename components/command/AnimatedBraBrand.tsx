@@ -132,10 +132,12 @@ export function AnimatedBraBrand({
       className="relative inline-block min-w-[3ch] align-middle"
       style={{
         width: `${width}px`,
+        height: "1em",
         fontFamily: "var(--font-orbitron), monospace",
         letterSpacing: "2px",
         textTransform: "uppercase",
         fontSize: "0.75rem",
+        lineHeight: 1,
         opacity: phase.opacity,
         transition: `opacity ${FADE_DURATION}ms`,
       }}
@@ -143,7 +145,7 @@ export function AnimatedBraBrand({
       <span ref={measureRef} className="pointer-events-none absolute left-0 top-0 whitespace-pre opacity-0">
         {TEXT}
       </span>
-      <span aria-hidden="true" className="block whitespace-pre">
+      <span aria-hidden="true" className="block min-h-[1em] whitespace-pre">
         {TEXT.slice(0, phase.count).split("").map((char, index) => {
           const isBra = BRA_INDICES.has(index);
           const tone = isBra

@@ -10,9 +10,12 @@ type ProofSelectorItem = {
   title: string;
   description: string;
   src: string;
+  mobileSrc?: string;
   alt: string;
   width: number;
   height: number;
+  mobileWidth?: number;
+  mobileHeight?: number;
   imageClassName?: string;
 };
 
@@ -76,13 +79,32 @@ export function ProofSelector({ items, tone = "dark" }: ProofSelectorProps) {
       <div
         className={`mt-5 flex min-h-[220px] items-center justify-center overflow-hidden rounded-[22px] border p-3 sm:min-h-[320px] sm:p-5 md:min-h-[360px] ${theme.frame}`}
       >
-        <Image
-          src={active.src}
-          alt={active.alt}
-          width={active.width}
-          height={active.height}
-          className={`h-auto max-h-[72vh] w-full object-contain ${active.imageClassName ?? ""}`}
-        />
+        {active.mobileSrc ? (
+          <>
+            <Image
+              src={active.mobileSrc}
+              alt={active.alt}
+              width={active.mobileWidth ?? active.width}
+              height={active.mobileHeight ?? active.height}
+              className={`h-auto max-h-[72vh] w-full object-contain md:hidden ${active.imageClassName ?? ""}`}
+            />
+            <Image
+              src={active.src}
+              alt={active.alt}
+              width={active.width}
+              height={active.height}
+              className={`hidden h-auto max-h-[72vh] w-full object-contain md:block ${active.imageClassName ?? ""}`}
+            />
+          </>
+        ) : (
+          <Image
+            src={active.src}
+            alt={active.alt}
+            width={active.width}
+            height={active.height}
+            className={`h-auto max-h-[72vh] w-full object-contain ${active.imageClassName ?? ""}`}
+          />
+        )}
       </div>
 
       <div className="px-1 pb-1 pt-4 sm:pt-5">
