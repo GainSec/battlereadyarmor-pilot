@@ -124,7 +124,7 @@ export default function Marketing2() {
       }}
     >
       <header className="sticky top-0 z-50 border-b border-emerald-400/10 bg-[#030712]/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+        <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex items-center gap-3">
             <AnimatedBraBrand
               accentColor={wordmarkTheme.accentColor}
@@ -154,7 +154,7 @@ export default function Marketing2() {
 
       <main>
         <section className="px-6 pb-20 pt-20 lg:px-8 lg:pb-28 lg:pt-28">
-          <div className="mx-auto max-w-6xl">
+          <div className="mx-auto w-full max-w-[1400px]">
             <div>
               <p
                 className="inline-flex rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-bold uppercase tracking-[0.28em] text-emerald-300"
@@ -162,21 +162,21 @@ export default function Marketing2() {
               >
                 Pilot Program Open
               </p>
-              <h1 className="mt-8 max-w-4xl text-4xl font-semibold leading-[1.04] tracking-tight text-white lg:text-7xl">
+              <h1 className="mt-8 w-full max-w-[980px] text-4xl font-semibold leading-[1.04] tracking-tight text-white lg:text-7xl">
                 The control plane for
                 <br />
                 <span className="text-emerald-300">
                   AI-assisted offensive security.
                 </span>
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+              <p className="mt-6 w-full max-w-[760px] text-lg leading-relaxed text-slate-300">
                 Offensive AI, under mechanical control.
               </p>
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300">
+              <p className="mt-4 w-full max-w-[760px] text-base leading-relaxed text-slate-300">
                 BRA coordinates tools, AI reasoning, and human operators to
                 execute offensive security workflows under mechanical control.
               </p>
-              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-400">
+              <p className="mt-4 w-full max-w-[760px] text-sm leading-relaxed text-slate-400">
                 AI models can now perform real security work. Whats missing is
                 control layers that keep operators in charge.
               </p>
@@ -197,7 +197,7 @@ export default function Marketing2() {
                 </a>
               </p>
 
-              <div className="mt-12 grid max-w-2xl grid-cols-2 gap-4 md:grid-cols-4">
+              <div className="mt-12 grid w-full max-w-[980px] grid-cols-2 gap-4 md:grid-cols-4">
                 {[
                   "Scope Enforcement",
                   "Runtime Approval Gates",
@@ -225,10 +225,10 @@ export default function Marketing2() {
                 >
                   Command Center
                 </p>
-                <h2 className="mt-5 max-w-2xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+                <h2 className="mt-5 w-full max-w-[820px] text-3xl font-semibold tracking-tight text-white lg:text-5xl">
                   Direct offensive workflows through a controlled command interface.
                 </h2>
-                <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
+                <p className="mt-5 w-full max-w-[820px] text-lg leading-relaxed text-slate-300">
                   Scope, authorization, and execution context remain visible while the operator directs the engagement.
                 </p>
 
@@ -248,7 +248,7 @@ export default function Marketing2() {
         </section>
 
         <section className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
-          <div className="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-[1.08fr_0.72fr]">
+          <div className="mx-auto grid w-full max-w-[1400px] items-start gap-10 lg:grid-cols-[1.08fr_0.72fr]">
             <div>
               <SectionLabel>REAL OFFENSIVE WORK</SectionLabel>
               <h2 className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.08] tracking-tight text-white lg:text-5xl">
@@ -290,7 +290,7 @@ export default function Marketing2() {
         </section>
 
         <section id="gap" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
-          <div className="mx-auto max-w-6xl">
+          <div className="mx-auto w-full max-w-[1400px]">
             <SectionLabel>The Control Gap</SectionLabel>
             <h2 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
               The model is not the product. the control layer is.
@@ -309,7 +309,7 @@ export default function Marketing2() {
         </section>
 
         <section id="pillars" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
-          <div className="mx-auto max-w-6xl">
+          <div className="mx-auto w-full max-w-[1400px]">
             <SectionLabel>Core Pillars</SectionLabel>
             <h2 className="mt-5 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
               BRA is built around five operational guarantees.
@@ -329,7 +329,7 @@ export default function Marketing2() {
         </section>
 
         <section id="loop" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
-          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="mx-auto grid w-full max-w-[1400px] gap-10 lg:grid-cols-[0.95fr_1.05fr]">
             <div>
               <SectionLabel>Multi-Layered Checkpoints</SectionLabel>
               <h2 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
@@ -361,7 +361,7 @@ export default function Marketing2() {
         </section>
 
         <section id="knowledge" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
-          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.92fr_1.08fr]">
+          <div className="mx-auto grid w-full max-w-[1400px] gap-10 lg:grid-cols-[0.92fr_1.08fr]">
             <div>
               <SectionLabel>Knowledge That Compounds</SectionLabel>
               <h2 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
@@ -397,7 +397,7 @@ export default function Marketing2() {
         </section>
 
         <section id="buyers" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
-          <div className="mx-auto max-w-6xl">
+          <div className="mx-auto w-full max-w-[1400px]">
             <SectionLabel>Who Moves First</SectionLabel>
             <div className="mt-8 grid gap-5 lg:grid-cols-3">
               {buyers.map((buyer) => (
@@ -421,7 +421,7 @@ export default function Marketing2() {
         </section>
 
         <section id="cta" className="border-t border-emerald-400/10 px-6 py-20 lg:px-8">
-          <div className="mx-auto max-w-4xl rounded-[32px] border border-emerald-400/14 bg-emerald-400/[0.06] p-8 text-center lg:p-12">
+          <div className="mx-auto w-full max-w-[1200px] rounded-[32px] border border-emerald-400/14 bg-emerald-400/[0.06] p-8 text-center lg:p-12">
             <SectionLabel>Request Access</SectionLabel>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-white lg:text-5xl">
               Run offensive AI under real operational control in a private pilot.
