@@ -148,12 +148,6 @@ export default function Marketing2() {
               Buyers
             </Link>
           </nav>
-          <Link
-            href="#cta"
-            className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200 transition hover:bg-emerald-400/20"
-          >
-            Request Pilot
-          </Link>
         </div>
       </header>
 
@@ -187,12 +181,6 @@ export default function Marketing2() {
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <Link
-                  href="#cta"
-                  className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-[#04111d] transition hover:bg-emerald-300"
-                >
-                  Request Pilot
-                </Link>
                 <Link
                   href="#cta"
                   className="inline-flex items-center justify-center rounded-full border border-white/12 px-6 py-3 text-sm font-semibold text-white transition hover:border-emerald-300/40 hover:text-emerald-200"
@@ -441,14 +429,6 @@ export default function Marketing2() {
               If you want the speed curve of frontier models without betting
               your reputation on blind autonomy, this is the conversation to have.
             </p>
-            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Link
-                href="mailto:hello@bra.dev?subject=Request%20Pilot"
-                className="inline-flex rounded-full bg-emerald-300 px-6 py-3 text-sm font-semibold text-[#03111a]"
-              >
-                Request Pilot
-              </Link>
-            </div>
             <WaitlistForm />
             <p className="mt-4 text-sm text-slate-400">
               Investor, partner, or cleared org briefing:{" "}

@@ -5,11 +5,13 @@ import {
   getWaitlistErrorMessage,
   isValidWaitlistEmail,
   normalizeWaitlistEmail,
+  normalizeWaitlistMessage,
 } from "@/lib/waitlist";
 
 export async function POST(req: Request) {
-  const { email } = await req.json();
+  const { email, message } = await req.json();
   const normalizedEmail = normalizeWaitlistEmail(email);
+  const normalizedMessage = normalizeWaitlistMessage(message);
 
   if (!normalizedEmail || !isValidWaitlistEmail(normalizedEmail)) {
     return NextResponse.json({ error: "invalid email" }, { status: 400 });
@@ -20,7 +22,9 @@ export async function POST(req: Request) {
     process.env.SUPABASE_SERVICE_ROLE_KEY!,
   );
 
-  const { error } = await supabase.from("waitlist").insert({ email: normalizedEmail });
+  const { error } = await supabase
+    .from("waitlist")
+    .insert({ email: normalizedEmail, message: normalizedMessage });
 
   if (error) {
     return NextResponse.json(
