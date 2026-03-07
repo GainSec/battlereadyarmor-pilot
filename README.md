@@ -1,6 +1,6 @@
-# BRA War Room
+# Battle Ready Armor Pilot Page
 
-Landing page for the BRA offensive security control platform.
+Landing page for the BRA offensive security control platform. Made by GainSec
 
 ## Development
 
