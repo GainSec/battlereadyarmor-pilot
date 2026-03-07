@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "BRA | War Room",
+  title: "Battle Ready Armor Pilot | GainSec",
   description:
     "Control-first BRA landing page for pilots, demos, and security leaders.",
 };
