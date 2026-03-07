@@ -434,7 +434,7 @@ export default function Marketing2() {
               Investor, partner, or cleared org briefing:{" "}
               <a
                 className="text-emerald-300 underline underline-offset-4"
-                href="mailto:hello@bra.dev?subject=Confidential%20BRA%20Inquiry"
+                href="mailto:private@gainsecmail.com?subject=Confidential%20BRA%20Inquiry"
               >
                 confidential outreach
               </a>
