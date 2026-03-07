@@ -76,7 +76,7 @@ export default function ConfidentialInquiryForm() {
         <button
           type="submit"
           disabled={loading}
-          className="rounded-full border border-white/12 px-6 py-2 font-semibold text-white transition hover:border-emerald-300/40 hover:text-emerald-200 disabled:cursor-not-allowed disabled:opacity-70"
+          className="rounded-full bg-emerald-300 px-6 py-2 font-semibold text-black transition hover:bg-emerald-200 disabled:cursor-not-allowed disabled:opacity-70"
         >
           {loading ? "Submitting..." : "Confidential Outreach"}
         </button>
