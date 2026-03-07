@@ -1,6 +1,6 @@
 # BRA War Room
 
-Landing page for the BRA offensive security control platform.
+Landing page for the BRA offensive security control platform. Made by GainSec
 
 ## Development
 
@@ -15,7 +15,3 @@ npm run dev
 npm run build
 npm start
 ```
-
-## Deploy
-
-Deploy automatically through Vercel by importing the GitHub repository.
