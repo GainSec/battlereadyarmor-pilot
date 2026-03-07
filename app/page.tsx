@@ -1,4 +1,5 @@
 import { ProofSelector } from "@/components/ProofSelector";
+import WaitlistForm from "@/components/WaitlistForm";
 import { AnimatedBraBrand } from "@/components/command/AnimatedBraBrand";
 import { getMarketingWordmarkTheme } from "@/lib/marketing-wordmark-theme";
 import type { Metadata } from "next";
@@ -447,13 +448,8 @@ export default function Marketing2() {
               >
                 Request Pilot
               </Link>
-              <Link
-                href="mailto:hello@bra.dev?subject=Join%20Waitlist"
-                className="inline-flex rounded-full border border-white/12 px-6 py-3 text-sm font-semibold text-white"
-              >
-                Join Waitlist
-              </Link>
             </div>
+            <WaitlistForm />
             <p className="mt-4 text-sm text-slate-400">
               Investor, partner, or cleared org briefing:{" "}
               <a
