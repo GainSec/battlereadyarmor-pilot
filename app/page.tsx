@@ -1,3 +1,4 @@
+import ConfidentialInquiryForm from "@/components/ConfidentialInquiryForm";
 import { ProofSelector } from "@/components/ProofSelector";
 import WaitlistForm from "@/components/WaitlistForm";
 import { AnimatedBraBrand } from "@/components/command/AnimatedBraBrand";
@@ -430,15 +431,10 @@ export default function Marketing2() {
               your reputation on blind autonomy, this is the conversation to have.
             </p>
             <WaitlistForm />
-            <p className="mt-4 text-sm text-slate-400">
-              Investor, partner, or cleared org briefing:{" "}
-              <a
-                className="text-emerald-300 underline underline-offset-4"
-                href="mailto:private@gainsecmail.com?subject=Confidential%20BRA%20Inquiry"
-              >
-                confidential outreach
-              </a>
+            <p className="mt-8 text-sm text-slate-400">
+              Investor, partner, or cleared org briefing:
             </p>
+            <ConfidentialInquiryForm />
           </div>
         </section>
 
