@@ -145,7 +145,7 @@ export default function Marketing2() {
             className="hidden items-center gap-8 text-[11px] uppercase tracking-[0.26em] text-slate-400 md:flex"
             style={{ fontFamily: mono }}
           >
-            <Link href="#gap" className="transition hover:text-emerald-300">
+            <Link href="#control" className="transition hover:text-emerald-300">
               Control
             </Link>
             <Link href="#loop" className="transition hover:text-emerald-300">
@@ -204,7 +204,10 @@ export default function Marketing2() {
               </a>
             </p>
 
-            <div className="mt-12 grid w-full max-w-[1080px] grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div
+              id="control"
+              className="mt-12 scroll-mt-28 grid w-full max-w-[1080px] grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
+            >
               {heroHighlights.map((item) => (
                 <div
                   key={item.title}
