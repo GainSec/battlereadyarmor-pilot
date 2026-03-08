@@ -210,7 +210,7 @@ export default function Marketing2() {
               {heroHighlights.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-2xl border border-white/10 bg-white/[0.03] p-4"
+                  className="rounded-2xl border border-white/20 bg-white/[0.08] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.18)] sm:border-white/10 sm:bg-white/[0.03] sm:shadow-none"
                 >
                   <p
                     className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300"
@@ -234,7 +234,7 @@ export default function Marketing2() {
               {coreProblemCards.map((card) => (
                 <div
                   key={card}
-                  className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 text-sm leading-relaxed text-slate-300"
+                  className="rounded-3xl border border-white/20 bg-white/[0.08] p-6 text-sm leading-relaxed text-slate-300 shadow-[0_10px_30px_rgba(0,0,0,0.18)] sm:border-white/10 sm:bg-white/[0.03] sm:shadow-none"
                 >
                   {card}
                 </div>
@@ -260,7 +260,7 @@ export default function Marketing2() {
                 Every action, approval, artifact, and finding is preserved as a
                 verifiable engagement record.
               </p>
-              <div className="mt-8 rounded-3xl border border-white/10 bg-white/[0.03] p-7">
+              <div className="mt-8 rounded-3xl border border-white/20 bg-white/[0.08] p-7 shadow-[0_10px_30px_rgba(0,0,0,0.18)] sm:border-white/10 sm:bg-white/[0.03] sm:shadow-none">
                 <div className="grid gap-4">
                   {[
                     "Targets must be explicitly authorized before the system interacts with them.",
@@ -291,15 +291,16 @@ export default function Marketing2() {
               </h2>
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-400">
                 Execution context is captured and organized continuously so
-                reconnaissance data, intermediate outputs, and follow-up leads
-                remain accessible after the engagement.
+                reconnaissance data, intermediate outputs, follow-up leads, and
+                findings are immediately accessible throughout the engagement
+                lifecycle.
               </p>
               <p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate-300">
                 Every governed engagement produces durable operational artifacts
                 that preserve operational knowledge so expertise survives
                 operator turnover.
               </p>
-              <div className="mt-5 max-w-2xl rounded-3xl border border-white/10 bg-white/[0.03] p-5">
+              <div className="mt-5 max-w-2xl rounded-3xl border border-white/20 bg-white/[0.08] p-5 shadow-[0_10px_30px_rgba(0,0,0,0.18)] sm:border-white/10 sm:bg-white/[0.03] sm:shadow-none">
                 <p className="text-sm font-semibold text-emerald-300">
                   Examples include:
                 </p>
@@ -325,7 +326,7 @@ export default function Marketing2() {
               {buyers.map((buyer) => (
                 <div
                   key={buyer.title}
-                  className="rounded-3xl border border-white/10 bg-white/[0.03] p-6"
+                  className="rounded-3xl border border-white/20 bg-white/[0.08] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.18)] sm:border-white/10 sm:bg-white/[0.03] sm:shadow-none"
                 >
                   <h3 className="text-lg font-semibold text-white">{buyer.title}</h3>
                   <ul className="mt-4 space-y-3 text-sm text-slate-300">

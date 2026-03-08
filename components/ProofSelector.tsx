@@ -41,11 +41,11 @@ export function ProofSelector({ items, tone = "dark" }: ProofSelectorProps) {
           body: "text-stone-600",
         }
       : {
-          shell: "border-white/10 bg-white/[0.04]",
+          shell: "border-white/20 bg-white/[0.08] sm:border-white/10 sm:bg-white/[0.04]",
           tabs: "border-white/10 bg-black/20",
           tabIdle: "text-slate-400 hover:text-white",
           tabActive: "bg-cyan-300 text-[#04111d] shadow-[0_0_18px_rgba(103,232,249,0.25)]",
-          frame: "border-white/10 bg-[#020817]",
+          frame: "border-white/20 bg-[#06101d] sm:border-white/10 sm:bg-[#020817]",
           eyebrow: "text-cyan-300",
           title: "text-white",
           body: "text-slate-400",
