@@ -66,7 +66,6 @@ const enforcementItems = [
 ] as const;
 
 const knowledgePoints = [
-  "The system retains engagement context, artifacts, and decisions so organizations compound offensive capability over time.",
   "Findings preserved as structured artifacts",
   "Attack paths retained as institutional knowledge",
   "Tool workflows recorded as reusable capability",
@@ -81,7 +80,7 @@ const proofItems = [
     eyebrow: "",
     title: "",
     description:
-      "Governed execution produces a reproducible finding artifact including severity, affected surface, evidence, and reproduction steps.",
+      "Governed execution produces a structured finding artifact with severity, affected surface, preserved evidence, and reproducible context.",
     src: "/finding.png",
     mobileSrc: "/mobile-finding.jpg",
     alt: "BRA finding artifact showing a high-severity unauthenticated admin interface issue with description, impact, and reproduction details.",
@@ -290,12 +289,15 @@ export default function Marketing2() {
               <h2 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
                 Offensive knowledge should compound, not disappear.
               </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-                Every governed engagement produces durable operational artifacts.
-              </p>
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-400">
-                Operational knowledge is retained as structured artifacts so
-                expertise survives operator turnover.
+                Execution context is captured and organized continuously so
+                reconnaissance data, intermediate outputs, and follow-up leads
+                remain accessible after the engagement.
+              </p>
+              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate-300">
+                Every governed engagement produces durable operational artifacts
+                that preserve operational knowledge so expertise survives
+                operator turnover.
               </p>
               <div className="mt-5 max-w-2xl rounded-3xl border border-white/10 bg-white/[0.03] p-5">
                 <p className="text-sm font-semibold text-emerald-300">
