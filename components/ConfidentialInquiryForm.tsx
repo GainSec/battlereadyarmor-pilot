@@ -30,15 +30,15 @@ export default function ConfidentialInquiryForm() {
       const data = await res.json();
 
       if (res.ok) {
-        setStatus("Private inquiry received.");
+        setStatus("Private briefing request received.");
         setEmail("");
         setNameOrOrg("");
         setMessage("");
       } else {
-        setStatus(data.error || "Submit failed.");
+        setStatus(data.error || "Briefing request failed.");
       }
     } catch {
-      setStatus("Submit failed.");
+      setStatus("Briefing request failed.");
     } finally {
       setLoading(false);
     }
@@ -69,7 +69,7 @@ export default function ConfidentialInquiryForm() {
           rows={4}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="What do you want to discuss privately?"
+          placeholder="What kind of engagement or workflow are you evaluating?"
           className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-emerald-300/40"
         />
 
@@ -78,7 +78,7 @@ export default function ConfidentialInquiryForm() {
           disabled={loading}
           className="rounded-full bg-emerald-300 px-6 py-2 font-semibold text-black transition hover:bg-emerald-200 disabled:cursor-not-allowed disabled:opacity-70"
         >
-          {loading ? "Submitting..." : "Confidential Outreach"}
+          {loading ? "Submitting..." : "Request Private Briefing"}
         </button>
       </form>
 
