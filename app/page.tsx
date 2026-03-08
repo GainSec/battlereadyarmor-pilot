@@ -54,8 +54,8 @@ const enforcementItems = [
   {
     id: "tool",
     label: "Tool / Script Approval Gate",
-    eyebrow: "Runtime Control",
-    title: "Every action is governed before execution.",
+    eyebrow: "",
+    title: "",
     description:
       "The system presents the proposed command, tool path, and execution context before allowing the operator to authorize the action.",
     src: "/toolapproval.png",
@@ -78,8 +78,8 @@ const proofItems = [
   {
     id: "results",
     label: "Example Finding Artifact",
-    eyebrow: "Knowledge That Compounds",
-    title: "Offensive knowledge should compound, not disappear.",
+    eyebrow: "",
+    title: "",
     description:
       "Governed execution produces a reproducible finding artifact including severity, affected surface, evidence, and reproduction steps.",
     src: "/finding.png",

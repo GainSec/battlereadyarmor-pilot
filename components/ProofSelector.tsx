@@ -6,8 +6,8 @@ import { useState } from "react";
 type ProofSelectorItem = {
   id: string;
   label: string;
-  eyebrow: string;
-  title: string;
+  eyebrow?: string;
+  title?: string;
   description: string;
   src: string;
   mobileSrc?: string;
@@ -108,11 +108,19 @@ export function ProofSelector({ items, tone = "dark" }: ProofSelectorProps) {
       </div>
 
       <div className="px-1 pb-1 pt-4 sm:pt-5">
-        <p className={`text-[11px] font-bold uppercase tracking-[0.26em] ${theme.eyebrow}`}>
-          {active.eyebrow}
+        {active.eyebrow ? (
+          <p className={`text-[11px] font-bold uppercase tracking-[0.26em] ${theme.eyebrow}`}>
+            {active.eyebrow}
+          </p>
+        ) : null}
+        {active.title ? (
+          <p className={`mt-2 text-base font-semibold sm:text-lg ${theme.title}`}>{active.title}</p>
+        ) : null}
+        <p
+          className={`${active.eyebrow || active.title ? "mt-2" : ""} text-sm leading-relaxed sm:text-[15px] ${theme.body}`}
+        >
+          {active.description}
         </p>
-        <p className={`mt-2 text-base font-semibold sm:text-lg ${theme.title}`}>{active.title}</p>
-        <p className={`mt-2 text-sm leading-relaxed sm:text-[15px] ${theme.body}`}>{active.description}</p>
       </div>
     </div>
   );
