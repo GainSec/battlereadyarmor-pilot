@@ -251,7 +251,13 @@ export default function Marketing2() {
               <h2 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
                 Every action is governed before execution.
               </h2>
-              <p className="mt-5 max-w-3xl text-sm leading-relaxed text-slate-400">
+              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-slate-300">
+                Enforcement does not rely on agent behavior alone. Control is
+                applied at multiple points in the execution loop so policy
+                remains intact even if the agent fails, misbehaves, or attempts
+                an unsafe action.
+              </p>
+              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-400">
                 Every action, approval, artifact, and finding is preserved as a
                 verifiable engagement record.
               </p>
