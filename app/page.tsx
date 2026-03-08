@@ -267,6 +267,7 @@ export default function Marketing2() {
                     "Targets must be explicitly authorized before the system interacts with them.",
                     "Tools and scripts require approval at the moment of execution.",
                     "Sensitive values can be masked before they reach automated agents.",
+                    "The system does not depend on a specific model or tool stack.",
                     "Operators retain full situational awareness while the engagement progresses.",
                   ].map((item) => (
                     <div key={item} className="flex gap-3 text-sm leading-relaxed text-slate-200">
