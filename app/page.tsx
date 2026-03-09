@@ -81,8 +81,8 @@ const proofItems = [
     title: "",
     description:
       "Governed execution produces a structured finding artifact with severity, affected surface, preserved evidence, and reproducible context.",
-    src: "/finding.png",
-    mobileSrc: "/mobile-finding.jpg",
+    src: "/finding-example-better.png",
+    mobileSrc: "/finding-mobile-better.jpg",
     alt: "BRA finding artifact showing a high-severity unauthenticated admin interface issue with description, impact, and reproduction details.",
     width: 892,
     height: 895,
