@@ -263,7 +263,7 @@ export default function Marketing2() {
               <div className="mt-8 rounded-3xl border border-white/20 bg-white/[0.08] p-7 shadow-[0_10px_30px_rgba(0,0,0,0.18)] sm:border-white/10 sm:bg-white/[0.03] sm:shadow-none">
                 <div className="grid gap-4">
                   {[
-                    "Targets must be explicitly authorized before the system interacts with them.",
+                    "Execution remains constrained to the authorized scope throughout the engagement.",
                     "Tools and scripts require approval at the moment of execution.",
                     "Sensitive values can be masked before they reach automated agents.",
                     "The system does not depend on a specific model or tool stack.",
